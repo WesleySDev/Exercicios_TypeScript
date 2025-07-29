@@ -14,22 +14,24 @@ informe na tela:
     o valor do aumento;
     o novo salário, após o aumento.
 */
-
-let salario: number = 1000; // Salário atual
-let percentual: number;
-let aumento: number;
+var salario = 1000; // Salário atual
+var percentual;
+var aumento;
 if (salario <= 280) {
-  percentual = 20; // Aumento de 20%
-} else if (salario > 280 && salario <= 700) {
-  percentual = 15; // Aumento de 15%
-} else if (salario > 700 && salario <= 1500) {
-  percentual = 10; // Aumento de 10%
-} else {
-  percentual = 5; // Aumento de 5%
+    percentual = 20; // Aumento de 20%
+}
+else if (salario > 280 && salario <= 700) {
+    percentual = 15; // Aumento de 15%
+}
+else if (salario > 700 && salario <= 1500) {
+    percentual = 10; // Aumento de 10%
+}
+else {
+    percentual = 5; // Aumento de 5%
 }
 aumento = (salario * percentual) / 100; // Cálculo do aumento
-let novoSalario: number = salario + aumento; // Novo salário após o aumento
-console.log(`Salário antes do reajuste: R$ ${salario.toFixed(2)}`);
-console.log(`Percentual de aumento aplicado: ${percentual}%`);
-console.log(`Valor do aumento: R$ ${aumento.toFixed(2)}`);
-console.log(`Novo salário, após o aumento: R$ ${novoSalario.toFixed(2)}`); // Exibe o novo salário após o aumento
+var novoSalario = salario + aumento; // Novo salário após o aumento
+console.log("Sal\u00E1rio antes do reajuste: R$ ".concat(salario.toFixed(2)));
+console.log("Percentual de aumento aplicado: ".concat(percentual, "%"));
+console.log("Valor do aumento: R$ ".concat(aumento.toFixed(2)));
+console.log("Novo sal\u00E1rio, ap\u00F3s o aumento: R$ ".concat(novoSalario.toFixed(2))); // Exibe o novo salário após o aumento
