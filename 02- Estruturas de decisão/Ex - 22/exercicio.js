@@ -1,8 +1,9 @@
+"use strict";
 /*
 Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
 */
-var letra = "a"; // Letra digitada pelo usuário
-var resultado;
+let letra = "a"; // Letra digitada pelo usuário
+let resultado;
 if (["a", "e", "i", "o", "u"].includes(letra.toLowerCase())) {
     // Verifica se a letra é uma vogal
     // A função toLowerCase() é usada para garantir que a verificação seja feita de forma case-insensitive
@@ -11,5 +12,5 @@ if (["a", "e", "i", "o", "u"].includes(letra.toLowerCase())) {
 else {
     resultado = "Consoante";
 }
-console.log("A letra digitada \u00E9: ".concat(letra));
-console.log("Resultado: ".concat(resultado));
+console.log(`A letra digitada é: ${letra}`);
+console.log(`Resultado: ${resultado}`);

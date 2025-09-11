@@ -1,6 +1,7 @@
+"use strict";
 /*
 Faça um Programa que converte metros para centímetros.
 */
-var metros = 5;
-var centimetros = metros * 100;
-console.log("".concat(metros, " metros equivalem a ").concat(centimetros, " cent\u00EDmetros."));
+let metros = 5;
+let centimetros = metros * 100;
+console.log(`${metros} metros equivalem a ${centimetros} centímetros.`);

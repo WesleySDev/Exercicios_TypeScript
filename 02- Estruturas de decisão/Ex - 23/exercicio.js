@@ -1,3 +1,4 @@
+"use strict";
 /*
 Faça um programa para a leitura de duas notas parciais de um aluno.
  O programa deve calcular a média alcançada por aluno e apresentar:
@@ -5,10 +6,10 @@ Faça um programa para a leitura de duas notas parciais de um aluno.
   A mensagem "Reprovado", se a mídia for menor do que sete; A mensagem
   "Aprovado com Distinção", se a média for igual a dez.
 */
-var nota1 = 8.5;
-var nota2 = 9.5;
-var media = (nota1 + nota2) / 2; // Calcula a média das notas
-var resultado;
+let nota1 = 8.5;
+let nota2 = 9.5;
+let media = (nota1 + nota2) / 2; // Calcula a média das notas
+let resultado;
 if (media >= 7 && media < 10) {
     resultado = "Aprovado"; // Média maior ou igual a 7 e menor que 10
 }
@@ -18,7 +19,7 @@ else if (media === 10) {
 else {
     resultado = "Reprovado"; // Média menor que 7
 }
-console.log("Nota 1: ".concat(nota1));
-console.log("Nota 2: ".concat(nota2));
-console.log("M\u00E9dia: ".concat(media.toFixed(2))); // Exibe a média com duas casas decimais
-console.log("Resultado: ".concat(resultado));
+console.log(`Nota 1: ${nota1}`);
+console.log(`Nota 2: ${nota2}`);
+console.log(`Média: ${media.toFixed(2)}`); // Exibe a média com duas casas decimais
+console.log(`Resultado: ${resultado}`);

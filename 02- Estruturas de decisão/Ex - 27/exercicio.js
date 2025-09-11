@@ -1,12 +1,13 @@
+"use strict";
 /*
 Faça um Programa que leia três números e mostre-os em ordem decrescente.
 */
-var numero1 = 30;
-var numero2 = 20;
-var numero3 = 10;
-var maior;
-var meio;
-var menor;
+let numero1 = 30;
+let numero2 = 20;
+let numero3 = 10;
+let maior;
+let meio;
+let menor;
 if (numero1 >= numero2 && numero1 >= numero3) {
     maior = numero1; // Se numero1 é o maior
     if (numero2 >= numero3) {
@@ -40,7 +41,7 @@ else {
         menor = numero1; // Se numero1 é o menor
     }
 }
-console.log("N\u00FAmero 1: ".concat(numero1));
-console.log("N\u00FAmero 2: ".concat(numero2));
-console.log("N\u00FAmero 3: ".concat(numero3));
-console.log("N\u00FAmeros em ordem decrescente: ".concat(maior, ", ").concat(meio, ", ").concat(menor)); // Exibe os números em ordem decrescente
+console.log(`Número 1: ${numero1}`);
+console.log(`Número 2: ${numero2}`);
+console.log(`Número 3: ${numero3}`);
+console.log(`Números em ordem decrescente: ${maior}, ${meio}, ${menor}`); // Exibe os números em ordem decrescente

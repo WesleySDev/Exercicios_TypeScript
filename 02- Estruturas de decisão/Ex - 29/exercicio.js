@@ -1,3 +1,4 @@
+"use strict";
 /*
 As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e eles os contrataram para desenvolver o programa que calculará os reajustes.
 
@@ -14,9 +15,9 @@ informe na tela:
     o valor do aumento;
     o novo salário, após o aumento.
 */
-var salario = 1000; // Salário atual
-var percentual;
-var aumento;
+let salario = 1000; // Salário atual
+let percentual;
+let aumento;
 if (salario <= 280) {
     percentual = 20; // Aumento de 20%
 }
@@ -30,8 +31,8 @@ else {
     percentual = 5; // Aumento de 5%
 }
 aumento = (salario * percentual) / 100; // Cálculo do aumento
-var novoSalario = salario + aumento; // Novo salário após o aumento
-console.log("Sal\u00E1rio antes do reajuste: R$ ".concat(salario.toFixed(2)));
-console.log("Percentual de aumento aplicado: ".concat(percentual, "%"));
-console.log("Valor do aumento: R$ ".concat(aumento.toFixed(2)));
-console.log("Novo sal\u00E1rio, ap\u00F3s o aumento: R$ ".concat(novoSalario.toFixed(2))); // Exibe o novo salário após o aumento
+let novoSalario = salario + aumento; // Novo salário após o aumento
+console.log(`Salário antes do reajuste: R$ ${salario.toFixed(2)}`);
+console.log(`Percentual de aumento aplicado: ${percentual}%`);
+console.log(`Valor do aumento: R$ ${aumento.toFixed(2)}`);
+console.log(`Novo salário, após o aumento: R$ ${novoSalario.toFixed(2)}`); // Exibe o novo salário após o aumento

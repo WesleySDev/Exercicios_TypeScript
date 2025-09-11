@@ -1,14 +1,15 @@
+"use strict";
 /*
 Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
 o produto do dobro do primeiro com metade do segundo.
  a soma do triplo do primeiro com o terceiro. o terceiro elevado ao cubo.
 */
-var numeroInteiro1 = 6;
-var numeroInteiro2 = 3;
-var numeroReal = 4.5;
-var produto = 2 * numeroInteiro1 * (numeroInteiro2 / 2);
-var soma = 3 * numeroInteiro1 + numeroReal;
-var cubo = Math.pow(numeroReal, 3);
-console.log("O produto do dobro do primeiro n\u00FAmero com metade do segundo \u00E9 ".concat(produto, "."));
-console.log("A soma do triplo do primeiro n\u00FAmero com o terceiro \u00E9 ".concat(soma, "."));
-console.log("O terceiro n\u00FAmero elevado ao cubo \u00E9 ".concat(cubo, "."));
+let numeroInteiro1 = 6;
+let numeroInteiro2 = 3;
+let numeroReal = 4.5;
+let produto = 2 * numeroInteiro1 * (numeroInteiro2 / 2);
+let soma = 3 * numeroInteiro1 + numeroReal;
+let cubo = Math.pow(numeroReal, 3);
+console.log(`O produto do dobro do primeiro número com metade do segundo é ${produto}.`);
+console.log(`A soma do triplo do primeiro número com o terceiro é ${soma}.`);
+console.log(`O terceiro número elevado ao cubo é ${cubo}.`);

@@ -1,9 +1,10 @@
+"use strict";
 /*
 Faça um Programa que leia um número e exiba o dia correspondente da semana.
 (1-Domingo, 2- Segunda, etc.), se digitar outro valor deverá aparecer valor inválido.
 */
-var dia = 3; // Número do dia da semana (1 a 7)
-var mensagem;
+let dia = 3; // Número do dia da semana (1 a 7)
+let mensagem;
 switch (dia) {
     case 1:
         mensagem = "Domingo";
@@ -29,7 +30,7 @@ switch (dia) {
     default:
         mensagem = "Valor inválido"; // Caso o número não esteja entre 1 e 7
 }
-console.log("Dia da semana: ".concat(dia));
-console.log("Mensagem: ".concat(mensagem)); // Exibe a mensagem correspondente ao dia da semana
-console.log("\nC\u00E1lculo realizado com sucesso!"); // Mensagem de sucesso
-console.log("\nObserva\u00E7\u00E3o: O n\u00FAmero deve estar entre 1 e 7 para ser v\u00E1lido."); // Observação sobre o intervalo válido
+console.log(`Dia da semana: ${dia}`);
+console.log(`Mensagem: ${mensagem}`); // Exibe a mensagem correspondente ao dia da semana
+console.log(`\nCálculo realizado com sucesso!`); // Mensagem de sucesso
+console.log(`\nObservação: O número deve estar entre 1 e 7 para ser válido.`); // Observação sobre o intervalo válido
