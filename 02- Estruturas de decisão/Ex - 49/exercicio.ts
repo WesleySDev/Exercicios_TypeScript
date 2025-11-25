@@ -18,7 +18,7 @@ if (mes < 1 || mes > 12) {
     diasNoMes = ehBissexto ? 29 : 28;
   } else {
     diasNoMes = [4, 6, 9, 11].includes(mes) ? 30 : 31;
-  }
+  }a
   if (dia < 1 || dia > diasNoMes) {
     ehDataValida = false;
   }
